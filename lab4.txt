@@ -6,10 +6,10 @@ cd prog4
 mvn compile 
 mvn exec:java -Dexec.mainClass="amc.App"
 
-Same folder
+{Same folder}
 gradle init
 
- Code change
+{Update code}
 
 gradle build
 gradle run
