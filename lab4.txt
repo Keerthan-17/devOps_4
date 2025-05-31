@@ -1,0 +1,15 @@
+Create maven project 
+mvn archetype: generate "-Dfilter=org.apache.maven.archetypes:"
+
+cd prog4
+
+mvn compile 
+mvn exec:java -Dexec.mainClass="amc.App"
+
+Same folder
+gradle init
+
+ Code change
+
+gradle build
+gradle run

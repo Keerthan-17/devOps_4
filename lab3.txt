@@ -1,0 +1,6 @@
+mkdir prog3
+cd prog3
+
+gradle init
+
+gradle run

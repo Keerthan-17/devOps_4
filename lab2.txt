@@ -1,0 +1,1 @@
+mvn archetype:generate "-Dfilter=org.apache.maven.archetypes:"

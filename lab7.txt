@@ -1,0 +1,28 @@
+sudo su
+apt install ansible -y
+nano hosts.ini
+
+[local]
+localhost ansible_connection =local
+{ctrl+O,press enter, ctrl+X}
+
+nano setup.yml
+
+---
+- name: Basic server setup
+  hosts: localhost
+  become: true
+  tasks:
+  - name: install curl
+    apt:
+       name: curl
+       state: present
+  - name: install git apt
+    apt:
+       name: git
+       state: present
+
+{ctrl+O,press enter, ctrl+X}
+
+
+ansible-playbook -i hosts.ini setup.yml
