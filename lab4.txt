@@ -11,5 +11,5 @@ gradle init
 
 {Update code}
 
-gradle build
+gradle clean build
 gradle run
