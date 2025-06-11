@@ -1,1 +1,6 @@
 mvn archetype:generate "-Dfilter=org.apache.maven.archetypes:"
+
+{Run}
+cd prog2
+mvn compile
+mvn exec:java -Dexec.mainClass="amc.App"
